@@ -168,3 +168,8 @@ dmypy.json
 # End of https://www.gitignore.io/api/django,python
 
 uploads/
+
+.env
+
+node_modules
+node_modules

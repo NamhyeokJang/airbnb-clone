@@ -1,7 +1,18 @@
 {
+  "name": "airbnb-clone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/NamhyeokJang/airbnb-clone.git",
   "scripts": {
-    "start": "python3 manage.py runserver",
-    "makemigrations": "python3 manage.py makemigrations",
-    "migrate": "python3 manage.py migrate"
+    "css": "gulp"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.0",
+    "tailwindcss": "^1.4.4"
   }
 }
