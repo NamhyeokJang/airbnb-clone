@@ -13,28 +13,7 @@
 
         {% include 'partials/social_login.html' %}
 
-        <form method="POST" action="{% url "users:login"%}" class='w-full'>
-            {% csrf_token %}
-
-            <div class='input'>
-                {{form.email}}
-                {% if form.email.errors %}
-                    {% for error in form.email.errors %}
-                        <span class='text-red-700 font-medium text-sm'>{{error}}</span>
-                    {% endfor %}
-                {% endif %}
-            </div>
-
-            <div class='input'>
-                {{form.password}}
-                {% if form.password.error %}
-                    {% for error in form.password.error %}
-                        <span class='text-red-700 font-medium text-sm'>{{error}}</span>
-                    {% endfor %}
-                {% endif %}
-            </div>
-            <button class='btn bg-red-400 text-white'>Login</button>
-        </form>
+        {% include 'mixins/auth/auth_form.html' with form=form cta='Login'%}
 
         <div class='mt-5'>
             <span class='mr-2'>Don't have an account?</span>
