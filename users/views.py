@@ -242,7 +242,7 @@ class UpdateProfileView(SuccessMessageMixin, UpdateView):
 
 
 class UpdatePasswordView(SuccessMessageMixin, PasswordChangeView):
-    
+
     template_name = "users/update-password.html"
     success_message = "Password Updated"
 
