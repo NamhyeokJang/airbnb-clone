@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "python.pythonPath": "/home/jnh/.local/share/virtualenvs/airbnb-clone-67SSVtQt/bin/python",
   "python.formatting.provider": "black",
@@ -7,4 +8,15 @@
   "python.linting.flake8Args": [
     "--max-line-length=88"
   ],
+=======
+{
+  "python.pythonPath": "/home/desk/.local/share/virtualenvs/airbnb-clone-juI58IBG/bin/python",
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": false,
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=88"
+  ]
+>>>>>>> ac5ae249115f5f35588f4cf3b92382084eb1bf06
 }
